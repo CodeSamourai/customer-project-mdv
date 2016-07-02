@@ -1,0 +1,19 @@
+
+
+OR                     VIOLET
+---                   --------
+foncé 1 : #765309  =>  #401436
+
+foncé 2 : #b07b0a  =>  #6f2763
+
+clair 1: #d39e2d   =>  #812e75
+
+clair 2: #efdaa1   =>  #f5b5ec
+
+
+GRIS
+-----
+
+Texte   #a9b5af    =>  #3b3e3d
+
+
