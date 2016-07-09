@@ -1,0 +1,17 @@
+#header {
+	width: 100vw;
+	overflow: hidden;
+	background: #1eb089;
+	.slideshow{
+		margin: 0 auto;
+		width: 950px;
+		height: 300px;
+		position: relative;
+	}
+  .slideshow img{
+    max-width: 100%;
+    position: absolute;
+  	top:0;
+  	height: auto;
+  }
+}

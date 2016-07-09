@@ -1,0 +1,26 @@
+.footer{
+  font-family: 'Socialico';
+  font-size: 2em;
+  width: 100%;
+  background: #6f2763;
+  bottom: 0;
+  // position: absolute;
+  @media screen and (max-width: 420px){
+    position: static;
+  }
+
+  ul{
+    margin:0;
+    padding: 0;
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+    color:#ffffff;
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+    }
+  }
+}

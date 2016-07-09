@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <title>Inscription - Dîner Gala pour l’évangélisation des nations </title>
+
+		<link rel="stylesheet" href="assets/css/app.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+  </head>
+  <body>
+
+    <div id="header">
+    		<div class="slideshow">
+    		    <!-- <img src="assets/pictures/unes/slide1.jpg" alt="" style="display: block;">
+			      <img src="assets/pictures/unes/slide2.jpg" alt="" style="display: block;">
+			      <img src="assets/pictures/unes/slide3.jpg" alt="" style="display: none;"> -->
+			  </div>
+      	<h1>
+      			<!-- <span class="va1">
+      				<span class="va2">
+      					<img src="assets/pictures/unes/slider-text.png" alt="Dîner Gala pour l’évangélisation des nations">
+      				</span>
+      			</span> -->
+      	</h1>
+    </div>
+    <div class="main">
+      <div class="boxes-container">
+        <div class="box__left">
+          <div class="box__title">
+            1. S'inscrire
+          </div>
+          <div class="box__content">
+            " J'ai conscience que les bénéfices de cette soirée seront intégralement reversés à l’œuvre d’évangélisation et de compassion du Ministère Messages de Vie. "
+            <p>
+              <button type="button" name="button" class="cta-subscription">Je m'inscris</button>
+            </p>
+          </div>
+        </div>
+        <div class="box__right">
+          <div class="box__title">
+            2. Donner
+          </div>
+          <div class="box__content">
+            " Je ne pourrai pas être des vôtres le 15 septembre prochain, mais je souhaite faire un don pour soutenir l'évangélisation des nations au travers du Ministère Messages de Vie. "
+            <p>
+              <button type="button" name="button" class="cta-subscription">Je fais un don</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="mix-container">
+        <div class="left-side">
+          <div class="pastor">
+            <div class="pastor__image">
+              <img src="assets/pictures/pastor.png" alt="">
+            </div>
+            <div class="pastor__presentation">
+              <div class="pastor__presentation__name">Mohammed Sanogo</div>
+              <div class="pastor__presentation__function">Pasteur - Président de l'organisation Messages de Vie</div>
+              <div class="pastor__presentation__logos">
+                <img src="assets/pictures/logo/logos.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <h4>Diner Gala 2016 - Messages de Vie Europe</h4>
+            <p>
+              Pour la seconde édition de son dîner, Messages de Vie Europe, section France vous reçoit dans
+              la sympathique salle du carré rouge du Palais des congrès de Paris-Montreuil.
+            </p>
+            <ul class="details__items">
+              <li><h4>Programme :</h4> </li>
+              <li>
+                <i class="fa fa-calendar" aria-hidden="true"></i> <strong>Date :</strong>
+                <span>Jeudi 15 Septembre 2016</span>
+              </li>
+              <li>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Horaires :</strong>
+                <span>de 19h00 à 22h30 (Accueil dès 18h30)</span>
+              </li>
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Lieu :</strong>
+                <span>Palais des Congrès de Paris-Montreuil, 128 Rue de Paris, 93100 Montreuil, France</span>
+              </li>
+              <li>
+                <i class="fa fa-eur" aria-hidden="true"></i> <strong>Tarif :</strong>
+                <span>90 euros / personnes. <br>Places limitées/Inscrivez-vous vite !</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="right-side">
+          <form>
+            <div class="form-group">
+              <label for="lastname">Nom (*)</label>
+              <input type="email" class="form-control" id="lastname" placeholder="nom">
+            </div>
+            <div class="form-group">
+              <label for="firstname">Prenom (*)</label>
+              <input type="password" class="form-control" id="firstname" placeholder="prénom">
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse Email (*)</label>
+              <input type="password" class="form-control" id="email" placeholder="exemple@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="tel">Tel (*)</label>
+              <input type="password" class="form-control" id="tel" placeholder="+33 X 00 00 00">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> J'accepte les conditions générales
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="location">
+        gjidughughufghtughtugtguihhgitu
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="footer">
+        <ul>
+          <li> &#70; </li>
+          <li> &#76; </li>
+          <li> &#88; </li>
+        </ul>
+    </div>
+
+
+  <script type="text/javascript" src="assets/js/libs/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript">
+     $(function(){
+  	    $('.slideshow img:gt(0)').hide();
+  	    setInterval(function(){
+  	    	$('.slideshow :first-child').fadeOut(1000).next('img').fadeIn(1000).end().appendTo('.slideshow');}
+  	    , 3000);
+  	});
+  </script>
+</body>
+</html>

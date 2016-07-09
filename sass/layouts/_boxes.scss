@@ -1,0 +1,54 @@
+.box-property{
+  padding: 20px;
+  color: #ffffff;
+  margin-top: -80px;
+  // height: 160px;
+  @media screen and (max-width: 420px){
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+}
+
+.boxes-container{
+  width:88%;
+  margin: 0 auto;
+  @media screen and (max-width: 420px){
+    width: 100% !important;
+  }
+
+  .box{
+    &__left{
+      @extend .box-property;
+      background: #6f2763;
+      float: left;
+      width: 50%;
+    }
+
+    &__right{
+      @extend .box-property;
+      background-color: #812e75;
+      float: right;
+      width: 50%;
+      text-align: center;
+    }
+
+    &__title{
+      font-weight: bold;
+      font-size: 1.5em;
+      padding-bottom: 1em;
+    }
+    &__content{
+      font-style: italic;
+    }
+
+    &__title,&__content{
+      width: 63%;
+      margin: 0 auto;
+      text-align: center;
+      @media screen and (max-width: 420px){
+        width: 80% !important;
+      }
+    }
+
+  }
+}
