@@ -492,14 +492,6 @@ form {
   margin-bottom: 1em;
 }
 
-/* line 32, ../../sass/layouts/_main.scss */
-label {
-  display: inline-block;
-  vertical-align: middle;
-  width: 130px;
-  margin-right: 2em;
-}
-
 /* line 39, ../../sass/layouts/_main.scss */
 .form-control {
   max-width: 400px;
@@ -513,21 +505,34 @@ label {
 #header {
   width: 100vw;
   overflow: hidden;
-  background: #1eb089;
 }
-/* line 5, ../../sass/layouts/_header.scss */
+/* line 4, ../../sass/layouts/_header.scss */
 #header .slideshow {
   margin: 0 auto;
-  width: 950px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   position: relative;
 }
-/* line 11, ../../sass/layouts/_header.scss */
+@media screen and (max-width: 420px) {
+  /* line 4, ../../sass/layouts/_header.scss */
+  #header .slideshow {
+    height: 200px !important;
+  }
+}
+/* line 13, ../../sass/layouts/_header.scss */
 #header .slideshow img {
   max-width: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   height: auto;
+}
+@media screen and (max-width: 420px) {
+  /* line 13, ../../sass/layouts/_header.scss */
+  #header .slideshow img {
+    width: auto !important;
+    max-width: auto !important;
+  }
 }
 
 /* line 1, ../../sass/layouts/_boxes.scss */
@@ -535,6 +540,8 @@ label {
   padding: 20px;
   color: #ffffff;
   margin-top: -80px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 420px) {
   /* line 1, ../../sass/layouts/_boxes.scss */
@@ -544,48 +551,52 @@ label {
   }
 }
 
-/* line 12, ../../sass/layouts/_boxes.scss */
+/* line 14, ../../sass/layouts/_boxes.scss */
 .boxes-container {
   width: 88%;
   margin: 0 auto;
 }
 @media screen and (max-width: 420px) {
-  /* line 12, ../../sass/layouts/_boxes.scss */
+  /* line 14, ../../sass/layouts/_boxes.scss */
   .boxes-container {
     width: 100% !important;
   }
 }
-/* line 20, ../../sass/layouts/_boxes.scss */
+/* line 22, ../../sass/layouts/_boxes.scss */
 .boxes-container .box__left {
   background: #6f2763;
   float: left;
   width: 50%;
 }
-/* line 27, ../../sass/layouts/_boxes.scss */
+/* line 29, ../../sass/layouts/_boxes.scss */
 .boxes-container .box__right {
   background-color: #812e75;
   float: right;
   width: 50%;
   text-align: center;
 }
-/* line 35, ../../sass/layouts/_boxes.scss */
+/* line 37, ../../sass/layouts/_boxes.scss */
 .boxes-container .box__title {
   font-weight: bold;
   font-size: 1.5em;
   padding-bottom: 1em;
 }
-/* line 40, ../../sass/layouts/_boxes.scss */
+/* line 42, ../../sass/layouts/_boxes.scss */
 .boxes-container .box__content {
   font-style: italic;
 }
 /* line 44, ../../sass/layouts/_boxes.scss */
+.boxes-container .box__content p {
+  margin-top: 1em;
+}
+/* line 49, ../../sass/layouts/_boxes.scss */
 .boxes-container .box__title, .boxes-container .box__content {
   width: 63%;
   margin: 0 auto;
   text-align: center;
 }
 @media screen and (max-width: 420px) {
-  /* line 44, ../../sass/layouts/_boxes.scss */
+  /* line 49, ../../sass/layouts/_boxes.scss */
   .boxes-container .box__title, .boxes-container .box__content {
     width: 80% !important;
   }
@@ -682,9 +693,10 @@ button::-moz-focus-inner {
   .mix-container .left-side {
     width: 100% !important;
     display: block;
+    padding: 20px 0;
   }
 }
-/* line 17, ../../sass/layouts/_diary.scss */
+/* line 18, ../../sass/layouts/_diary.scss */
 .mix-container .right-side {
   width: 50%;
   padding: 20px;
@@ -692,13 +704,14 @@ button::-moz-focus-inner {
   vertical-align: top;
 }
 @media screen and (max-width: 420px) {
-  /* line 17, ../../sass/layouts/_diary.scss */
+  /* line 18, ../../sass/layouts/_diary.scss */
   .mix-container .right-side {
     width: 100% !important;
     display: block;
+    padding: 20px 0;
   }
 }
-/* line 27, ../../sass/layouts/_diary.scss */
+/* line 29, ../../sass/layouts/_diary.scss */
 .mix-container .pastor {
   width: 49%;
   background-color: #FFFFFF;
@@ -706,30 +719,30 @@ button::-moz-focus-inner {
   vertical-align: top;
 }
 @media screen and (max-width: 420px) {
-  /* line 27, ../../sass/layouts/_diary.scss */
+  /* line 29, ../../sass/layouts/_diary.scss */
   .mix-container .pastor {
     width: 100% !important;
   }
 }
-/* line 35, ../../sass/layouts/_diary.scss */
+/* line 37, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__image {
   width: 100%;
   padding: 20px;
   position: relative;
 }
 @media screen and (max-width: 420px) {
-  /* line 35, ../../sass/layouts/_diary.scss */
+  /* line 37, ../../sass/layouts/_diary.scss */
   .mix-container .pastor__image {
     width: 100% !important;
   }
 }
-/* line 42, ../../sass/layouts/_diary.scss */
+/* line 44, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__image img {
   max-width: 90%;
   height: auto;
   display: inline-block;
 }
-/* line 47, ../../sass/layouts/_diary.scss */
+/* line 49, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__image:before {
   content: "";
   border-color: transparent transparent #6f2763 #6f2763;
@@ -742,7 +755,7 @@ button::-moz-focus-inner {
   width: 0;
   z-index: 1;
 }
-/* line 60, ../../sass/layouts/_diary.scss */
+/* line 62, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__image:after {
   content: "";
   left: 0;
@@ -754,34 +767,34 @@ button::-moz-focus-inner {
   width: 0;
   height: 0;
 }
-/* line 73, ../../sass/layouts/_diary.scss */
+/* line 75, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__presentation {
   width: 100%;
   padding: 20px;
   float: right;
 }
 @media screen and (max-width: 420px) {
-  /* line 73, ../../sass/layouts/_diary.scss */
+  /* line 75, ../../sass/layouts/_diary.scss */
   .mix-container .pastor__presentation {
     width: 100% !important;
   }
 }
-/* line 81, ../../sass/layouts/_diary.scss */
+/* line 83, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__presentation__name {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 85, ../../sass/layouts/_diary.scss */
+/* line 87, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__presentation__function {
   font-weight: normal;
   font-style: italic;
   padding-bottom: 1em;
 }
-/* line 90, ../../sass/layouts/_diary.scss */
+/* line 92, ../../sass/layouts/_diary.scss */
 .mix-container .pastor__presentation__description {
   padding-bottom: 1em;
 }
-/* line 97, ../../sass/layouts/_diary.scss */
+/* line 99, ../../sass/layouts/_diary.scss */
 .mix-container .details {
   width: 50%;
   display: inline-block;
@@ -789,30 +802,30 @@ button::-moz-focus-inner {
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 420px) {
-  /* line 97, ../../sass/layouts/_diary.scss */
+  /* line 99, ../../sass/layouts/_diary.scss */
   .mix-container .details {
     width: 100% !important;
     display: block;
   }
 }
-/* line 107, ../../sass/layouts/_diary.scss */
+/* line 109, ../../sass/layouts/_diary.scss */
 .mix-container .details__items {
   margin-left: -30px;
 }
-/* line 109, ../../sass/layouts/_diary.scss */
+/* line 111, ../../sass/layouts/_diary.scss */
 .mix-container .details__items li {
   list-style-type: none;
   padding: .5em 0;
 }
-/* line 112, ../../sass/layouts/_diary.scss */
+/* line 114, ../../sass/layouts/_diary.scss */
 .mix-container .details__items li h4 {
   margin: 0;
 }
-/* line 113, ../../sass/layouts/_diary.scss */
+/* line 115, ../../sass/layouts/_diary.scss */
 .mix-container .details__items li .fa {
   margin-right: .3em;
 }
-/* line 116, ../../sass/layouts/_diary.scss */
+/* line 118, ../../sass/layouts/_diary.scss */
 .mix-container .details__items li span {
   margin-left: 1.3em;
   display: block;
@@ -820,18 +833,74 @@ button::-moz-focus-inner {
 
 /* line 1, ../../sass/layouts/_location.scss */
 .location {
-  background: url("../pictures/location.jpg");
-  background-size: cover;
-  height: 450px;
+  height: 475px;
+  position: relative;
+}
+/* line 4, ../../sass/layouts/_location.scss */
+.location__details {
+  position: absolute;
+  top: 10%;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 32%;
+  z-index: 5;
+  left: 7%;
+}
+@media screen and (max-width: 420px) {
+  /* line 4, ../../sass/layouts/_location.scss */
+  .location__details {
+    left: 3%;
+    width: 94%;
+  }
+}
+/* line 17, ../../sass/layouts/_location.scss */
+.location #map {
+  z-index: 1;
 }
 
 /* line 1, ../../sass/layouts/_footer.scss */
 .footer {
-  font-family: 'Socialico';
-  font-size: 2em;
+  font-size: 1em;
+  padding: 1em 0;
   width: 100%;
   background: #6f2763;
   bottom: 0;
+}
+/* line 8, ../../sass/layouts/_footer.scss */
+.footer-wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+/* line 12, ../../sass/layouts/_footer.scss */
+.footer__left {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media screen and (max-width: 420px) {
+  /* line 12, ../../sass/layouts/_footer.scss */
+  .footer__left {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 23, ../../sass/layouts/_footer.scss */
+.footer__right {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  height: 118px;
+  line-height: 118px;
+  text-align: center;
+}
+@media screen and (max-width: 420px) {
+  /* line 23, ../../sass/layouts/_footer.scss */
+  .footer__right {
+    display: block;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 420px) {
   /* line 1, ../../sass/layouts/_footer.scss */
@@ -839,7 +908,7 @@ button::-moz-focus-inner {
     position: static;
   }
 }
-/* line 12, ../../sass/layouts/_footer.scss */
+/* line 39, ../../sass/layouts/_footer.scss */
 .footer ul {
   margin: 0;
   padding: 0;
@@ -848,7 +917,7 @@ button::-moz-focus-inner {
   text-align: center;
   color: #ffffff;
 }
-/* line 20, ../../sass/layouts/_footer.scss */
+/* line 47, ../../sass/layouts/_footer.scss */
 .footer ul li {
   display: inline-block;
   vertical-align: top;
